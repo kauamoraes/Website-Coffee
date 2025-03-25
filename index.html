@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Header / Nav-baar section-->
+    <header>
+        <nav class="nav-bar">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-texto">☕ Coffee</h2>
+            </a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" >Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" >Sobre</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Testemunhos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Galeria</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleMenu()">Contato</a>
+                </li>
+            </ul>
+
+            <button class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="hero-titulo">Best Coffee</h1>
+            <h2 class="hero-sub">Faça seu dia especial com o nosso café especial</h2>
+            <p class="paragrafo-hero">Bem-vindo ao nosso paraíso do café, onde cada grão conta uma história e cada
+                xícara desperta alegria</p>
+
+            <div class="buttons-hero">
+                <button class="hero-button-order">Order Now</button>
+                <button class="hero-button-contact"> Contact Us</button>
+
+            </div>
+        </section>
+
+        <section class="hero-img">
+            <img src="images/coffee-hero-section.png" alt="">
+        </section>
+    </main>
+
+    <div class="about-section">
+        <section class="about-img">
+            <img src="images/about-image.jpg" alt="">
+        </section>
+
+        <section class="about-info">
+            <h2 class="about-titulo">Sobre</h2>
+            <p class="about-paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, facere ut.
+                Dignissimos at laboriosam cupiditate veniam tenetur rem perspiciatis voluptatibus distinctio atque
+                provident ea cum, consequuntur, tempore doloremque accusamus veritatis. Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Deleniti nam vero odio quas at eaque autem nemo, quisquam, exercitationem
+                veniam libero quia maxime pariatur qui sunt obcaecati fugit doloremque. Cupiditate!</p>
+        </section>
+    </div>
+
+    <div class="cardapio">
+        <div class="menu-cardapio">
+            <h2 class="titulo-cardapio">Nosso Cardápio</h2>
+        </div>
+
+        <div class="itens-cardapio">
+            <div class="item-cardapio-1">
+                <img src="images/hot-beverages.png" alt="">
+                <h3 class="titulo-item-cardapio-1">hot-beverages</h3>
+                <p class="paragrafo-item-cardapio-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cupiditate recusandae praesentium temporibus error esse libero quam fuga illum tenetur? Vitae
+                    consequatur, non veniam quidem dolor explicabo eum quam totam ex!</p>
+            </div>
+
+            <div class="item-cardapio-2">
+                <img src="images/cold-beverages.png" alt="">
+                <h3 class="titulo-item-cardapio-2">
+                    Cold Beverages
+                </h3>
+
+                <p class="paragrafo-item-cardapio-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore
+                    consequatur similique quisquam explicabo voluptas cumque autem sint reprehenderit, velit quae
+                    veritatis natus sunt animi harum perspiciatis asperiores error ipsa.</p>
+            </div>
+
+            <div class="item-cardapio-3">
+                <img src="images/refreshment.png" alt="">
+                <h3 class="titulo-item-cardapio-3">
+                    Refreshment
+                </h3>
+
+                <p class="paragrafo-item-cardapio-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore
+                    consequatur similique quisquam explicabo voluptas cumque autem sint reprehenderit, velit quae
+                    veritatis natus sunt animi harum perspiciatis asperiores error ipsa.</p>
+            </div>
+
+            <div class="item-cardapio-3">
+                <img src="images/special-combo.png" alt="">
+                <h3 class="titulo-item-cardapio-3">
+                    special-combo
+                </h3>
+
+                <p class="paragrafo-item-cardapio-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore
+                    consequatur similique quisquam explicabo voluptas cumque autem sint reprehenderit, velit quae
+                    veritatis natus sunt animi harum perspiciatis asperiores error ipsa.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="testimonials-section">
+        <h2 class="section-titulo-testemonials">Testemunhos</h2>
+        <div class="section-content">
+            <div class="slider container swiper">
+                <div class="slider-wrapper">
+                    <ul class="testimonials-list swiper-wrapper">
+                        <li class="testimonial swiper-slide">
+                            <img src="images/user-1.jpg" class="user-image" alt="user">
+                            <h3 class="name">Sarah Johnson</h3>
+                            <i class="feedback">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </i>
+                        </li>
+
+                        <li class="testimonial swiper-slide">
+                            <img src="images/user-2.jpg" class="user-image" alt="user">
+                            <h3 class="name">Sarah Johnson</h3>
+                            <i class="feedback">Lorem ipsum dolor sit, amet consectetur adipisicing elit.?</i>
+                        </li>
+
+                        <li class="testimonial swiper-slide">
+                            <img src="images/user-3.jpg" class="user-image" alt="user">
+                            <h3 class="name">Sarah Johnson</h3>
+                            <i class="feedback">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</i>
+                        </li>
+
+                        <li class="testimonial swiper-slide">
+                            <img src="images/user-4.jpg" class="user-image" alt="user">
+                            <h3 class="name">Sarah Johnson</h3>
+                            <i class="feedback">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </i>
+                        </li>
+
+                        <li class="testimonial swiper-slide">
+                            <img src="images/user-5.jpg" class="user-image" alt="user">
+                            <h3 class="name">Sarah Johnson</h3>
+                            <i class="feedback">Lorem ipsum dolor sit, amet consectetur adipisicing elit. ?</i>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swider-slide-button swiper-button-prev"></div>
+                    <div class="swider-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="galery-section">
+        <h2 class="galery-section-titulo">Galeria</h2>
+            <div class="images-gallery">
+                <img src="images/gallery-1.jpg" alt="" class="imagens">
+                <img src="images/gallery-2.jpg" alt="" class="imagens">
+                <img src="images/gallery-3.jpg" alt="" class="imagens">
+                <img src="images/gallery-4.jpg" alt="" class="imagens">
+                <img src="images/gallery-5.jpg" alt="" class="imagens">
+                <img src="images/gallery-6.jpg" alt="" class="imagens">
+            </div>
+    </section>
+
+
+    <section class="contato-section">
+        <h2>Contato</h2>
+            <div class="contato">
+                <input type="text" placeholder="Seu Nome" class="contato-item">
+                <input type="email" name="email" id="email" placeholder="email" class="contato-item">
+                <input type="text" placeholder="Sua Mensagem" class="contato-item" id="contato-item">
+            </div>
+
+            <button class="Submit">Submit</button>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
